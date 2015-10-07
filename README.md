@@ -24,7 +24,7 @@ In order to run this container you'll need docker installed.
 This will run anything you pass after the container.
 
 ```shell
-docker run give.example.org/of/your/container:v0.2.1 echo hello
+docker run quay.io/ukhomeofficedigital/selenium-local-server:v0.1.1 echo hello
 ```
 
 Will echo hello with selenium running in the background.
