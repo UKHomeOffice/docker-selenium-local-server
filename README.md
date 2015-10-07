@@ -40,7 +40,7 @@ Will echo hello with selenium running in the background.
 ## Find Us
 
 * [GitHub](https://github.com/UKHomeOffice/docker-selenium-local-server)
-* [Quay.io](https://quay.io/UKHomeOffice/selenium-local-server)
+* [Quay.io](https://quay.io/ukhomeofficedigital/selenium-local-server)
 
 ## Contributing
 
