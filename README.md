@@ -23,17 +23,23 @@ In order to run this container you'll need docker installed.
 
 #### Container Parameters
 
-This will run anything you pass after the container.
+This will run anything you pass after the container. The example below will run a java application mounted from the 
+current directory:
 
 ```shell
-docker run quay.io/ukhomeofficedigital/selenium-local-server:v0.1.1 echo hello
+docker run -v ${PWD}:/code quay.io/ukhomeofficedigital/selenium-local-server:v0.1.2 java -jar /code/myjar.jar
 ```
 
-Will echo hello with selenium running in the background.
+#### Environment Variables
+
+* `LOCAL_HOSTS_ENTRY` - An entry point to a hosts file (Supports browser endpoint testing without complex whitelisting 
+rules).  
+  Example: LOCAL_HOSTS_ENTRY='127.0.0.1 mywebsite.prod.gov.uk'
 
 #### Volumes
 
-* `/your/file/location` - Mount any dependencies you want to send as files to Selenium as a volume.
+* `/code` - Mount any dependencies you want to send as files to Selenium as a volume.
+* `/root/.gradle/caches` - Speeds up gradle builds when this data is mounted. 
 
 ## Built With
 

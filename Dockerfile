@@ -8,4 +8,8 @@ ENV JAVA_HOME /usr/lib/jvm/java-1.8.0-openjdk
 
 ADD run_when_ready.sh /opt/bin/
 
+VOLUME ["/root/.gradle/caches"]
+VOLUME ["/code"]
+WORKDIR /code
+
 ENTRYPOINT ["/opt/bin/run_when_ready.sh"]
