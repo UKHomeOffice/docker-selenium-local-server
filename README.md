@@ -1,5 +1,7 @@
 # Docker Selenium Server in the Background
 
+[![Build Status](https://travis-ci.org/UKHomeOffice/docker-selenium-local-server.svg?branch=master)](https://travis-ci.org/UKHomeOffice/docker-selenium-local-server)
+
 This docker container extends selenium server and allows you to run 
 processes which require it locally. This is useful for tests that require 
 file uploads, which can only be done locally from the selenium server.
